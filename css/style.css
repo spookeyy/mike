@@ -434,12 +434,58 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* nav ul {
+    margin-top: 20px;
+  } */
+
+  .hero {
+    padding: 50px 20px;
+    background-position: center;
+    backface-visibility: hidden;
+    background-clip: border-box;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-blend-mode: overlay;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/kherick.png);
+    height: 100vh;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 50px 20px;
+
+  }
   .hero-content h1 {
     font-size: 3rem;
   }
 
   .hero-content p {
     font-size: 1.5rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-items: space-between;
+    padding: 130px 20px;
+
+  }
+
+  .about h2 {
+    position: relative;
+    margin-bottom: 10px;
   }
 
   .about-content {
@@ -450,6 +496,16 @@ footer .social-links a:hover {
   .about-content img {
     width: 250px;
     height: 250px;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
+  }
+
+  .skills{
+    padding: 80px 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 
   .portfolio-grid {
