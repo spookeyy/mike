@@ -24,15 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.appendChild(lightbox);
 
   portfolioItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      lightbox.classList.add("active");
-      const img = document.createElement("img");
-      img.src = item.querySelector("img").src;
-      while (lightbox.firstChild) {
-        lightbox.removeChild(lightbox.firstChild);
-      }
-      lightbox.appendChild(img);
-    });
+    // item.addEventListener("click", () => {
+    //   lightbox.classList.add("active");
+    //   const img = document.createElement("img");
+    //   img.src = item.querySelector("img").src;
+    //   while (lightbox.firstChild) {
+    //     lightbox.removeChild(lightbox.firstChild);
+    //   }
+    //   lightbox.appendChild(img);
+    // });
   });
 
   lightbox.addEventListener("click", () => {
